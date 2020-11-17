@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IMAGE PICKER</title>
+</head>
+
+<body style="margin: 200px">
+
+    <center>
+        <select onchange="gantigambar();" id="listgambar">
+			<option value="gudeg.jpg">PILIH MAKANAN</option>
+			<option value="gado-gado.jpg">GADO-GADO</option>
+			<option value="karedok.jpg">KAREDOK</option>
+			<option value="pempek.jpg">PEMPEK</option>
+			<option value="soto-banjar.jpg">SOTO BANJAR</option>
+			<option value="surabi.jpg">SURABI</option>
+			<option value="tahu-sumedang.jpg">TAHU SUMEDANG</option>
+		</select>
+    </center>
+    <br/>
+    <img src="gudeg.jpg" style="width: 100%" id="gambar">
+
+</body>
+<script type="text/javascript">
+    function gantigambar() {
+        let gambar = document.getElementById("listgambar").value;
+        document.getElementById("gambar").src = gambar;
+        alert("Ini Gambar " + gambar);
+    }
+</script>
+
+</html>
